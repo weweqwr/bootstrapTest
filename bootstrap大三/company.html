@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.1.11.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+        window.onload=function _scroll(){
+            var scrollTop =$(window).scrollTop();
+            if(scrollTop<10){
+                $('.nav').css('opacity',0.1);
+            }else{
+                $('.nav').css('opacity',1); 
+            }
+        }
+        $(window).on('scroll',function() {
+            _scroll()
+        });
+
+        function _scroll(){
+            var scrollTop =$(window).scrollTop();
+            if(scrollTop<10){
+                $('.nav').css('opacity',0.1);
+            }else{
+                $('.nav').css('opacity',1); 
+            }
+        }
+        $(window).on('scroll',function() {
+            _scroll()
+        });
+        </script>
+      <style>
+       .blc {
+         background: black;
+         padding-bottom: 50px;
+         padding-top: 50px;
+        }
+        .nav{
+         background: black;
+       }
+       .pinks{
+         color: white;
+        }
+      .pinks:hover{
+        color: crimson;
+       }
+       a:hover, a:focus {
+	    text-decoration: none;
+	    color: #222;
+    }
+    header{
+      width: 100%;
+    }
+    li {
+      list-style: none;
+      font-size: 12px;
+    }
+
+    .co {
+      background-color: #262626;
+      width: 100%;
+    }
+
+    .bth:hover {
+      background-color: crimson;
+
+    }
+    .imgh{
+      width: 100%;
+    }
+    .imgh:hover{
+     width: 110%;
+     transition: all .5s;
+    }
+      </style>
+</head>
+<body>
+      <!--导航条-->
+      <div class="container-fluid">
+        <header>
+        <nav class="navbar navbar-expand-lg   navbar-default fixed-top nav">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand text-white " href="#">DEVTHEME</a>
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
+              <li class="nav-item active">
+                <a class="nav-link  pinks" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pinks" href="detail.html">DETAIL</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pinks" href="company.html">COMPANY <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pinks" href="introduct.html">TEAM</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pinks" href="introduct2.html">WORK</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pinks" href="onlinemenu.html">MENU</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pinks" href="shopping.html">CLIENTS</a>
+              </li>
+              
+            </ul>
+          </div>
+        </nav>
+        </header>
+      </div>
+      <!--第二栏 员工介绍视频-->
+      <div class="container-fluid">
+        <div class="row position-relative">
+          <div class="col-12 w-100">
+            <video autoplay="autoplay" muted="muted" loop="loop" class="d-block w-100">
+              <source src="video/video1.mp4">
+            </video>
+         </div>
+          <div class="container-fluid position-absolute w-100 h-100 text-lg-right  text-center  text-white" style="padding-right:10%; padding-left:10%;padding-top:15%;">
+               
+                <h2>用心做鸭，放心做人</h2><br>
+                <h2>让世界更好的了解您</h2><br>
+                <h5 style="font-weight:100;">真「响应式」自助建站平台</h5><br>
+                <h5 style="font-weight:100;">艺术品级模板 引领自助建站潮流</h5><br>
+                <button type="submit"
+                  class="btn btn-custom btn-lg text-white border-white mt-3 bth">免 费 创 建 账 户</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--第三栏更快更简单-->
+      <div class="container-fluid text-center" style="margin-top: 5%;margin-bottom: 5%; ">
+        <h2 style="font-weight:500;">更快，更简单</h2>
+        <p class="text-muted">采用响应式技术构建</p>
+        <p class="text-muted">一次编辑，在所有设备下使用</p>
+      </div>
+      <!--第四栏 手机+美食照片-->
+      <div class="container-fluid" style="padding-left: 5%;padding-right: 5%;margin-top: 5%;margin-bottom: 5%;">
+          <img src="image/company/1.jpg" class="w-100">
+      </div>
+      <!--第五栏-->
+      <div class="container-fluid bg-light" style="padding-top: 5%;padding-bottom: 5%;margin-bottom: 5%;">
+        <div class="row">
+          <div class="col-lg-6 col-12 " style="padding-left: 10%;"><img src="image/index/gallery/01.jpg" class="w-100"></div>
+          <div class="col-lg-6 col-12 text-center" style="padding-left: 10%; padding-right: 10%; margin-top: auto;margin-bottom: auto;">
+            <h3 style="font-weight:500;">BREAKFAST & STARTERS</h3>
+            <h6 style="font-weight: 100;" class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</h6>
+          </div>
+        </div>
+      </div>
+      <!--海量食品随你挑-->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 "><img src="image/company/p1-06.png" alt="" class="imgh"></div>
+          <div class="col-lg-4 col-md-6"><img src="image/company/p1-07.png" alt="" class="imgh"></div>
+          <div class="col-lg-4 col-md-6"><img src="image/company/p1-08.png" alt="" class="imgh"></div>
+          <div class="col-lg-4 col-md-6"><img src="image/company/p1-09.png" alt="" class="imgh"></div>
+          <div class="col-lg-4 col-md-6"><img src="image/company/p1-10.png" alt="" class="imgh"></div>
+          <div class="col-lg-4 col-md-6"><img src="image/company/p1-11.png" alt="" class="imgh"></div>
+        </div>
+      </div>
+      <!---->
+      <!--尾部-->
+    <div class="container-fluid">
+      <footer class="co" style="padding-top:  50px;">
+        <div class="row">
+          <div class="col-lg-4 col-md-12 col-sm-12 text-center">
+            <div class="text-white-50" style="font-size: 18px;">Reservations </div>
+            <ul class="text-white">
+              <li>Please call</li>
+              <li>(887) 654-3210</li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-12 col-sm-12 text-center">
+            <div class="text-white-50" style="font-size: 18px;">Address</div>
+            <ul class="text-white">
+              <li>4321 California St,</li>
+              <li>(San Francisco, CA 12345</li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-12 col-sm-12  text-center">
+            <div class="text-white-50" style="font-size: 18px;">Opening Hours</div>
+            <ul class="text-white">
+              <li>Mon-Thurs: 10:00 AM - 11:00 PM</li>
+              <li>Fri-Sun: 11:00 AM - 02:00 AM</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row" style="margin-top: 50px;">
+          <div class="text-white-50 text-center col-12 mb-5" style="font-size: 18px;">Opening Hours</div>
+
+          <div class="container">
+            <form>
+              <div class="row mb-2 d-flex justify-content-between">
+                <input type="text" class="form-control bg-transparent col-5" placeholder="Name"> <input type="text"
+                  class="form-control bg-transparent col-5" placeholder="Email">
+              </div>
+              <div class="row ">
+                <textarea name="message" id="message" class="form-control bg-transparent " rows="4"
+                  placeholder="Message"></textarea>
+              </div>
+              <div class="row justify-content-center"><button type="submit"
+                  class="btn btn-custom btn-lg text-muted border-dark mt-3 bth">Send Message</button></div>
+            </form>
+          </div>
+        </div>
+
+        
+        <div class="blc mt-4">
+          <div class="offset-lg-2 col-6 text-md-center text-sm-center text-muted">© 2017 Gusto. All rights reserved.More Templates龙哥哥最帅了，mua</div>
+          <div class="col-md-6">
+            <div class="social">
+              <ul>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+              </ul>
+            </div>
+          </div>
+      </footer>
+   </div>
+</body>
+</html>

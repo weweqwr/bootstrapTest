@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.1.11.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        window.onload=function _scroll(){
+            var scrollTop =$(window).scrollTop();
+            if(scrollTop<10){
+                $('.nav').css('opacity',0.1);
+            }else{
+                $('.nav').css('opacity',1); 
+            }
+        }
+        $(window).on('scroll',function() {
+            _scroll()
+        });
+
+        function _scroll(){
+            var scrollTop =$(window).scrollTop();
+            if(scrollTop<10){
+                $('.nav').css('opacity',0.1);
+            }else{
+                $('.nav').css('opacity',1); 
+            }
+        }
+        $(window).on('scroll',function() {
+            _scroll()
+        });
+        </script>
+      <style>
+       .blc {
+         background: black;
+         padding-bottom: 50px;
+         padding-top: 50px;
+        }
+        .nav{
+         background: black;
+       }
+       .pinks{
+         color: white;
+        }
+      .pinks:hover{
+        color: crimson;
+       }
+       a:hover, a:focus {
+	    text-decoration: none;
+	    color: #222;
+    }
+    header{
+      width: 100%;
+    }
+    li {
+      list-style: none;
+      font-size: 12px;
+    }
+
+    .co {
+      background-color: #262626;
+      width: 100%;
+    }
+
+    .bth:hover {
+      background-color: crimson;
+
+    }
+      </style>
+
+</head>
+<body>
+    <!--导航条-->
+    <div class="container-fluid">
+      <header>
+      <nav class="navbar navbar-expand-lg   navbar-default fixed-top nav">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a class="navbar-brand text-white " href="#">DEVTHEME</a>
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
+            <li class="nav-item active">
+              <a class="nav-link  pinks" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pinks" href="detail.html">DETAIL</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pinks" href="company.html">COMPANY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pinks" href="introduct.html">TEAM</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pinks" href="introduct2.html">WORK</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pinks" href="onlinemenu.html">MENU</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pinks" href="shopping.html">CLIENTS <span class="sr-only">(current)</span></a>
+            </li>
+            
+          </ul>
+        </div>
+      </nav>
+      </header>
+    </div>
+      <!--第二栏照片-->
+      <div class="row">
+          <img src="image/shopping/1.png" alt="" class="w-100">
+      </div>
+      <!--第三栏践行承诺-->
+      <div class="container-fluid text-center" style="margin-top: 8%;">
+        <h2>践行承诺</h2>
+        <div class="row" style="padding-right:10% ;padding-left: 10%; margin-top: 3%;">
+            <div class="col-lg-6 p-0 position-relative">
+                <div class="container position-absolute text-left" style="padding-top:42%;">
+                    <h3 class="text-white">用户隐私与数据保存</h3>
+                </div>
+                <img src="image/shopping/type-box-1.jpg" alt="" class="w-100">
+            </div>
+            <div class="col-lg-6 p-0 position-relative">
+                <div class="container position-absolute  text-left" style="padding-top:42%;">
+                    <h3 class="text-white">守护者计划</h3>
+                </div>
+                <img src="image/shopping/type-box-2.jpg" alt="" class="w-100">
+            </div>
+            <div class="col-lg-6 p-0 position-relative">
+                <div class="container position-absolute text-left" style="padding-top:42%;">
+                    <h3 class="text-white">未成年人健康保护系统</h3>
+                </div>
+                <img src="image/shopping/type-box-3.jpg" alt="" class="w-100">
+            </div>
+            <div class="col-lg-6 p-0 position-relative">
+                <div class="container position-absolute text-left" style="padding-top:42%;">
+                    <h3 class="text-white">知识产权</h3>
+                </div>
+                <img src="image/shopping/type-box-4.jpg" alt="" class="w-100">
+            </div>
+        </div>
+     </div>
+     <!--第四栏支持善举-->
+     <div class="container-fluid bg-light"style="padding-right:10% ;padding-left: 10%;padding-top:5%;margin-top:4%;" >
+        <h2 class="text-center" style="padding-bottom: 3%;">践行承诺</h2>
+         <div class="row" style="padding-bottom: 5%;">
+             <div class="col-lg-6 col-12">
+                 <div class="row="><img src="image/shopping/flx-1.jpg" class="w-100"></div>
+                 <div class="row">
+                     <h3  class="pl-3"style="margin-top:5%;margin-bottom:5%;">腾讯基金会</h3>
+                     <p class="text-muted pl-3 pr-3" style="font-weight: 100;font-size: 14px;">腾讯公益慈善基金会（腾讯基金会）于2007年6月成立，推动互联网与公益慈善事业的深度融合与发展。我们每年向腾讯基金会捐出部分利润，以支持慈善工作。</p>
+                </div>
+             </div>
+             <div class="col-lg-6 col-12">
+                <div class="row="><img src="image/shopping/flx-2.jpg" class="w-100"></div>
+                <div class="row">
+                    <h3  class="pl-3"style="margin-top:5%;margin-bottom:5%;">网络捐款平台</h3>
+                    <p class="text-muted pl-3 pr-3" style="font-weight: 100;font-size: 14px;">网络捐款平台是腾讯基金会推出的首个网上公开募捐平台，开放给合资格的慈善机构免费使用。个人用户可通过“乐捐”、“一起捐”等方式，选择自己信任的公益慈善项目，自主选择捐款，让人人可公益成为现实。</p>
+               </div>
+             </div>
+         </div>
+     </div>
+     <!--第五栏 公益日、长城保护地、腾讯村-->
+     <div class="container-fluid bg-light" style="padding-right:10% ;padding-left: 10%;">
+         <div class="row">
+             <div class="col-lg-4 col-12">
+                 <img src="image/shopping/flx-3.jpg" class="w-100">
+                 <h3  style="margin-top:5%;margin-bottom:5%;">99公益日</h3>
+                 <p class="text-muted " style="font-weight: 100;font-size: 14px;">腾讯基金会慈善工作的重头戏是每年一度于9月举行的“99公益日”活动，透过网上平台将大众在活动期间网上作出的捐款进行匹配。</p>
+             </div>
+             <div class="col-lg-4 col-12">
+                <img src="image/shopping/flx-4.jpg" class="w-100">
+                <h3  style="margin-top:5%;margin-bottom:5%;">腾讯长城保护项目</h3>
+                <p class="text-muted " style="font-weight: 100;font-size: 14px;">腾讯长城保护项目起始于2016年9月，由腾讯公益慈善基金会与中国文物保护基金会共同合作，并成立长城保护公益专项基金。</p>
+            </div>
+            <div class="col-lg-4 col-12">
+                <img src="image/shopping/flx-5.jpg" class="w-100">
+                <h3  style="margin-top:5%;margin-bottom:5%;">腾讯为村</h3>
+                <p class="text-muted " style="font-weight: 100;font-size: 14px;">腾讯为村，是一个用互联网助力精准脱贫、振兴乡村的工作平台。</p>
+            </div>
+         </div>
+     </div>
+      <!--第六栏践行承诺-->
+      <div class="container-fluid text-center" style="margin-top: 8%;margin-bottom: 8%;">
+        <h2>践行承诺</h2>
+        <div class="row" style="padding-right:10% ;padding-left: 10%; margin-top: 3%;">
+            <div class="col-lg-6 p-0 position-relative">
+                <div class="container position-absolute text-left" style="padding-top:42%;">
+                    <h3 class="text-white">激励科学</h3>
+                </div>
+                <img src="image/shopping/type-box-5.jpg" alt="" class="w-100">
+            </div>
+            <div class="col-lg-6 p-0 position-relative">
+                <div class="container position-absolute  text-left" style="padding-top:42%;">
+                    <h3 class="text-white">青少年培训</h3>
+                </div>
+                <img src="image/shopping/type-box-6.jpg" alt="" class="w-100">
+            </div>
+            <div class="col-lg-6 p-0 position-relative">
+                <div class="container position-absolute text-left" style="padding-top:42%;">
+                    <h3 class="text-white">助力创业者</h3>
+                </div>
+                <img src="image/shopping/type-box-7.jpg" alt="" class="w-100">
+            </div>
+            <div class="col-lg-6 p-0 position-relative">
+                <div class="container position-absolute text-left" style="padding-top:42%;">
+                    <h3 class="text-white">企业家成长</h3>
+                </div>
+                <img src="image/shopping/type-box-8.jpg" alt="" class="w-100">
+            </div>
+        </div>
+     </div>
+       <!--尾部-->
+    <div class="container-fluid">
+        <footer class="co" style="padding-top:  50px;">
+          <div class="row">
+            <div class="col-lg-4 col-md-12 col-sm-12 text-center">
+              <div class="text-white-50" style="font-size: 18px;">Reservations </div>
+              <ul class="text-white">
+                <li>Please call</li>
+                <li>(887) 654-3210</li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 text-center">
+              <div class="text-white-50" style="font-size: 18px;">Address</div>
+              <ul class="text-white">
+                <li>4321 California St,</li>
+                <li>(San Francisco, CA 12345</li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-12  text-center">
+              <div class="text-white-50" style="font-size: 18px;">Opening Hours</div>
+              <ul class="text-white">
+                <li>Mon-Thurs: 10:00 AM - 11:00 PM</li>
+                <li>Fri-Sun: 11:00 AM - 02:00 AM</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row" style="margin-top: 50px;">
+            <div class="text-white-50 text-center col-12 mb-5" style="font-size: 18px;">Opening Hours</div>
+  
+            <div class="container">
+              <form>
+                <div class="row mb-2 d-flex justify-content-between">
+                  <input type="text" class="form-control bg-transparent col-5" placeholder="Name"> <input type="text"
+                    class="form-control bg-transparent col-5" placeholder="Email">
+                </div>
+                <div class="row ">
+                  <textarea name="message" id="message" class="form-control bg-transparent " rows="4"
+                    placeholder="Message"></textarea>
+                </div>
+                <div class="row justify-content-center"><button type="submit"
+                    class="btn btn-custom btn-lg text-muted border-dark mt-3 bth">Send Message</button></div>
+              </form>
+            </div>
+          </div>
+          <div class="blc mt-4">
+            <div class="offset-lg-2 col-6 text-md-center text-sm-center text-muted">© 2017 Gusto. All rights reserved.More Templates龙哥哥最帅了，mua</div>
+            <div class="col-md-6">
+              <div class="social">
+                <ul>
+                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                </ul>
+              </div>
+            </div>
+        </footer>
+     </div>
+  </body>
+  </html>
+</body>
+</html>
